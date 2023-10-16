@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "599307993306",
+    "project_id": "test-app-9bbc0",
+    "storage_bucket": "test-app-9bbc0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599307993306:android:55d4af585a8855a95e65e3",
+        "android_client_info": {
+          "package_name": "com.example.motorrad_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRfF45qygYNkBU1YwdT2W_vtaIqGoELfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

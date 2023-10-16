@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:motorrad_app/views/screens/auth/login.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() => runApp(MaterialApp(home: Login()));
+// ...
+
+void main() => runApp(MaterialApp(home: FirstScreen()));
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({super.key});
@@ -74,8 +78,8 @@ class _AppState extends State<MotorradApp> {
           onPressed: () {
             setIndex(0);
           },
-          color: Color.fromARGB(255, 126, 63, 40),
-          child: Text("Chat"),
+          color: const Color.fromARGB(255, 126, 63, 40),
+          child: const Text("Chat"),
         );
 
       case 2:
@@ -83,34 +87,34 @@ class _AppState extends State<MotorradApp> {
           onPressed: () {
             setIndex(0);
           },
-          color: Color.fromARGB(255, 168, 135, 122),
-          child: Text("User Profil"),
+          color: const Color.fromARGB(255, 168, 135, 122),
+          child: const Text("User Profil"),
         );
       case 3:
         return MaterialButton(
           onPressed: () {
             setIndex(0);
           },
-          color: Color.fromARGB(255, 106, 73, 60),
-          child: Text("Touren Bilder"),
+          color: const Color.fromARGB(255, 106, 73, 60),
+          child: const Text("Touren Bilder"),
         );
       default:
-        return Text("Touren Bilder");
+        return const Text("Touren Bilder");
     }
   }
 
   Widget buildAppBar() {
     switch (_currentIndex) {
       case 0:
-        return Text("Home");
+        return const Text("Home");
       case 1:
-        return Text("Chat");
+        return const Text("Chat");
       case 2:
-        return Text("User");
+        return const Text("User");
       case 3:
-        return Text("Touren Bilder");
+        return const Text("Touren Bilder");
       default:
-        return Text("Exit");
+        return const Text("Exit");
     }
   }
 
@@ -118,12 +122,12 @@ class _AppState extends State<MotorradApp> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-            backgroundColor: Color.fromARGB(255, 208, 168, 51),
+            backgroundColor: const Color.fromARGB(255, 208, 168, 51),
             title: const Text("Motorrad App")),
-        backgroundColor: Color.fromARGB(255, 232, 227, 207),
+        backgroundColor: const Color.fromARGB(255, 232, 227, 207),
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
-          backgroundColor: Color.fromARGB(255, 201, 168, 66),
+          backgroundColor: const Color.fromARGB(255, 201, 168, 66),
           items: const [
             BottomNavigationBarItem(
                 label: "Home",
